@@ -4,8 +4,7 @@
       {
         "src": "portfolio.html",
         "use": "@vercel/static-build",
-        "config": { "distDir": "public" },
-        "buildCommand": "echo 'No build step required'"
+        "config": { "distDir": "public" }
       }
     ],
     "routes": [
