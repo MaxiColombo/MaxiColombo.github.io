@@ -1,7 +1,14 @@
 {
     "version": 2,
     "builds": [
-      { "src": "public/**/*", "use": "@vercel/static" },
-      { "src": "*.html", "use": "@vercel/static" }
+      {
+        "src": "portfolio.html",
+        "use": "@vercel/static-build",
+        "config": { "distDir": "public" }
+      }
+    ],
+    "routes": [
+      { "src": "/public/(.*)", "dest": "/public/$1" },
+      { "src": "/(.*)", "dest": "/portfolio.html" }
     ]
   }
