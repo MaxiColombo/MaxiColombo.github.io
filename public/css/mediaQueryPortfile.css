@@ -1,9 +1,19 @@
 @media screen and (max-width: 1200px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
   .desktopNav {
     display: none;
   }
   .hamburgerNav {
     display: flex;
+  }
+  .menuLinks{
+    background: transparent;
   }
 
   section {
@@ -23,6 +33,7 @@
     gap: 0;
    padding-top: 0;
     display: block;
+    margin-bottom: 2rem;
   }
 
   .sectionPicContainer {
