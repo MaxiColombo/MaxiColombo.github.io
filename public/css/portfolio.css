@@ -485,7 +485,7 @@ color: var(--colorGrey);
     color: rgb(73, 73, 73);
     font-weight: 700;
   }
-  .formInputs .required {
+   .required {
     color: rgb(87, 87, 199); 
   }
   .bannerPic {
