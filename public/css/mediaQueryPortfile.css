@@ -97,6 +97,9 @@
   .textContainer{
       width: 60%;
   }
+  .detailContainer{
+    padding: 1rem;
+  }
   .aboutDetailsContainer{
       justify-content: center;
   }
