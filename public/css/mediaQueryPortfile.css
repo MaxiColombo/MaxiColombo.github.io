@@ -23,7 +23,21 @@
     
     
   }
+
+  
+  /* WORK */
+  .workContainer{
+    display: block;
+  }
   /* PROFILE */
+  #profile {
+    gap: 0;
+   padding-top: 0;
+    display: block;
+    margin-bottom: 2rem;
+    height: auto;
+  }
+
   .sectionPicContainer {
     display: flex;
     justify-content: center;
@@ -36,31 +50,7 @@
     max-width: 100%;
     height: auto;
   }
-  /* WORK */
-  .workContainer{
-    display: block;
-  }
-  /* PROFILE */
-  #profile {
-    gap: 0;
-   padding-top: 0;
-    display: block;
-    margin-bottom: 2rem;
-  }
 
-  .sectionPicContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px; 
-    width: 400px; 
-    margin: 0 auto;
-  }
-
-  .sectionPicContainer img {
-    max-width: 100%; /* Hace que la imagen sea responsive y no exceda el ancho del contenedor */
-    height: auto;
-  }
   
   .arrow {
       position: absolute;
