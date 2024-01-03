@@ -1,10 +1,12 @@
+@media screen and (max-width: 700px) {
+
+
+}
+
+
 @media screen and (max-width: 1200px) {
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+
 
   .desktopNav {
     display: none;
@@ -23,6 +25,19 @@
     box-sizing: border-box;
     /* height: 96vh; */
     
+  }
+  /* PROFILE */
+  .sectionPicContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  .sectionPicContainer img {
+    max-width: 100%;
+    height: auto;
   }
   /* WORK */
   .workContainer{
@@ -60,7 +75,11 @@
       display: none;
   }
 
+  /* SKILL */
 
+  .skillsContainer{
+    flex-wrap: wrap;
+  }
   /* ABOUT */
 
  
