@@ -404,15 +404,23 @@
                     "Empresa: " + company + "<br>" +
                     "Mensaje: " + clientInfo;
 
-  Email.send({
-    SecureToken : "a0de6455-33c1-414c-ac22-ad3ffd55ca4a",
-    To : 'maximocolombo2003@gmail.com',
-    From : 'maximocolombo2003@gmail.com',
-    Subject : "New Contact Form",
-    Body : emailBody
-}).then(
-  message => alert(message)
-);
+                    Email.send({
+  SecureToken : "a0de6455-33c1-414c-ac22-ad3ffd55ca4a",
+  To : 'maximocolombo2003@gmail.com',
+  From : 'maximocolombo2003@gmail.com',
+  Subject : "New Contact Form",
+  Body : emailBody
+}).then(function (result) {
+  console.log('Resultado del envío de correo electrónico:', result);
+
+  if (result === 'OK') {
+    alert('Correo electrónico enviado correctamente');
+  } else {
+    alert('Error al enviar el correo electrónico: ' + result);
+  }
+}).catch(function (error) {
+  console.error('Error al enviar el correo electrónico:', error);
+});
 }
     </script>
     <!--  <script src="/js/contact.js"></script> -->
