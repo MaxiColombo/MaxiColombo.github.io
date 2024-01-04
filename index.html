@@ -55,6 +55,7 @@
 
     <!-- PROFILE -->
     <section id="profile">
+      
       <div class="sectionPicContainer">
         <img src="public/img/ColomboFotoGris.png" alt="Maximo Colombo Picture" />
       </div>
@@ -101,6 +102,12 @@
 
 
     <section id="myWork">
+      <img
+      src="public/img/arrowUp.png"
+      class="icon arrowUp"
+      alt="ArrowUp Icon"
+      onclick="location.href='#profile'"
+    />
       <div class="sectionText">
         <p class="sectionTextP1">Technical</p>
         <h1 class="title">Work</h1>
@@ -117,11 +124,17 @@
               <h2 class="workTitles">Si pinta, pinta</h2>
             </div>
             <div class="workDescription">
-              <p>
-                Si Pinta, Pinta is an online store. Crafted with HTML, CSS, and
-                JavaScript on the frontend, backed by MySQL on the backend.
-                Leveraging Node and Express for an efficient user experience.
-              </p>
+              <ul>
+                <li>E-commerce Front y back end realizado con JavaScript, HTML y CSS</li>
+                <li>Entorno de ejecución con Node.Js</li>
+                <li>Administración De Usuarios y Roles (Login, Register, Etc)</li>
+                <li>Encriptación de claves</li>
+                <li>Base de Datos MySQL</li>
+                <li>Incorporación de APIs</li>
+                <li>Patrón de diseño MVC</li>
+              </ul>
+  
+            
             </div>
           </div>
 
@@ -135,12 +148,13 @@
               <h2 class="workTitles">Arcade Gaming</h2>
             </div>
             <div class="workDescription">
-              <p>
-                Your Destination for Premier Electronics. Crafted with HTML,
-                CSS, and JavaScript on the frontend, backed by MySQL on the
-                backend. Optimized with Node and Express for an efficient user
-                experience.
-              </p>
+              <li>E-commerce Front y back end realizado con <p class="required">JavaScript, HTML y CSS</p></li>
+                <li>Entorno de ejecución con  <p class="required">Node.Js</p></li>
+                <li>Carro De Compras JavaScript</li>
+                <li>Administración De Usuarios y Roles (CRUD)</li>
+                <li>Encriptación de claves con <p class="required">Bcryptjs</p></li>
+                <li>Base de Datos<p class="required"> MySQ</p></li>
+                <li>Patrón de diseño MVC</li>
             </div>
           </div>
         </div>
@@ -153,6 +167,12 @@
       />
     </section>
     <section id="about">
+      <img
+      src="public/img/arrowUp.png"
+      class="icon arrowUp"
+      alt="ArrowUp Icon"
+      onclick="location.href='#myWork'"
+    />
       <p class="sectionTextP1">'Git' to Know Me</p>
       <h1 class="title">About Me</h1>
       <div class="sectionContainer">
@@ -205,7 +225,7 @@
         src="public/img/arrowUp.png"
         class="icon arrowUp"
         alt="ArrowUp Icon"
-        onclick="location.href='#myWork'"
+        onclick="location.href='#about'"
       />
       <p class="sectionTextP1">Technical</p>
       <h1 class="title">Skills</h1>
@@ -296,7 +316,9 @@
         onclick="location.href='#contact'"
       />
     </section>
+    
     <section id="contact">
+     
       <img
         src="public/img/arrowUp.png"
         class="icon arrowUp"
