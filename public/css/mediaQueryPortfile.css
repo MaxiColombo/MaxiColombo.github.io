@@ -13,6 +13,45 @@
     width: 90%;
 }
 
+
+/* MYWORK */
+.workTitles {
+  opacity: 1; /* Sin transición para opacidad */
+  transition: none; /* Desactiva la transición para opacidad */
+}
+.blurContainer{
+  transition: none;
+}
+.blurContainer .blur {
+  transition: none; /* Desactiva la transición para todas las propiedades */
+}
+.blurContainer .blur i.share,
+.blurContainer .blur h2.workTitles {
+  opacity: 1; /* Sin transición para opacidad */
+  transition: none; /* Desactiva la transición para opacidad */
+}
+.share{
+  display: none;
+}
+.blurContainer:hover .workPic {
+  filter: none
+}
+
+.blur {
+  backdrop-filter: none; /* Desactiva el filtro de fondo */
+  transition: none; /* Desactiva la transición para todas las propiedades */
+}
+.blur i.share,
+.blur img.workPic {
+  transition: none; /* Desactiva la transición para la opacidad */
+}
+
+.workDescription li {
+  padding: 5px;
+  list-style: none;
+}
+
+
 }
 
 @media screen and (max-width: 1200px) {
