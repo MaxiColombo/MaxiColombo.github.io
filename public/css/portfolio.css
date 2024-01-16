@@ -302,15 +302,19 @@ section {
 }
 .workTitles{
   margin: 5px;
+    opacity: 0; /* Añadido para controlar la transición de opacidad */
+    transition: opacity 0.8s ease; /* Añadida transición para opacity */
+    font-size: 1.5rem;
 }
 .workPic {
   
   height: 200px;
-  width: -webkit-fill-available;
-  margin: auto 0;
-  margin:30px;
+  width: -webkit-fill-available - 50px;
+  margin: 30px auto;
   display: block;
   align-items: center;
+  filter: blur(0);
+    transition: filter 1.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -318,63 +322,103 @@ section {
 
 .workContainer {
   margin-top: 2rem;
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
 }
+
 .workPictureContainer {
  
   text-align: center;
   position: relative;
-  display: inline-block;
+  display: inline-grid;
   overflow: hidden;
   width: 270px;
 }
-.blur {
-  transition: all 0.8s ease;
+.blurContainer {
   margin: 10px;
-  border: rgb(53, 53, 53) 0.15rem solid;
+  border: 0.15rem solid transparent;
   border-radius: 2rem;
-  word-wrap: break-word; /* Controla el desbordamiento de palabras */
+  word-wrap: break-word;
   animation: changeBorderColorr 3s infinite;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.8s ease; /* Añadida transición para todas las propiedades */
+}
+@keyframes changeBorderColorr {
+  0%, 50%, 100% {
+      border-color: white;
+  }
+  25%, 75% {
+      border-color: black;
+  }
+}
+.blurContainer .blur {
+  transition: all 0.5s ease; /* Añadida transición para todas las propiedades */
+}
+.blurContainer .blur i.share,
+.blurContainer .blur h2.workTitles {
+    opacity: 0; /* Añadido para controlar la transición de opacidad */
+    transition: opacity 0.5s ease; /* Añadida transición para opacity */
+}
+.blurContainer:hover .blur {
+  backdrop-filter: blur(10px);
 }
 
+.blurContainer:hover .blur i.share,
+.blurContainer:hover .blur h2.workTitles {
+    opacity: 1; /* Añadido para controlar la transición de opacidad */
+}
 
-@keyframes changeBorderColorr {
-    0% {
-      border-color: white;
-    }
-    25% {
-      border-color: black;
-    }
-    50% {
-      border-color: white;
-    }
-    75% {
-      border-color: black;
-    }
-    100% {
-      border-color: white;
-    }
-  }
-  
-
-.blur:hover {
+.blurContainer:hover .workPic {
   filter: blur(10px);
 }
-.workDescription li{
-padding: 5px;
-list-style:none;
-/* font-weight: 600; */
+
+.blur {
+  backdrop-filter: blur(0);
+  transition: all 0.5s ease; /* Añadida transición para todas las propiedades */
+}
+
+.blur i.share,
+.blur img.workPic {
+    transition: opacity 0.5s ease; /* Añadida transición para la opacidad */
+}
+
+.workDescription li {
+  padding: 5px;
+  list-style: none;
 }
 .share {
   position: absolute;
-  bottom: 140px;
-  color: black;
+  color: var(--detailColor);
   z-index: 20;
+  bottom: 8rem;
   font-size: 28px;
-  left: 120px;
-  display: none;
+  right: 6.6rem;
+  font-size: 2rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* SKILLS */
