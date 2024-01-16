@@ -100,7 +100,7 @@ a:hover {
 .menuLinks {
   position: absolute;
   top: 100%;
-  right: 0;
+  right: -2rem;
   background-color: white;
   width: fit-content;
   max-height: 0;
@@ -359,10 +359,11 @@ section {
 .blurContainer .blur i.share,
 .blurContainer .blur h2.workTitles {
     opacity: 0; /* Añadido para controlar la transición de opacidad */
-    transition: opacity 0.5s ease; /* Añadida transición para opacity */
+    transition: opacity 0.8s ease; /* Añadida transición para opacity */
 }
 .blurContainer:hover .blur {
   backdrop-filter: blur(10px);
+  transition: opacity 0.5s ease;
   
   
 }
@@ -373,7 +374,7 @@ section {
 }
 
 .blurContainer:hover .workPic {
-  filter: blur(10px);
+  filter: blur(13px);
 }
 .blurContainer:hover{
   backdrop-filter: brightness(1);

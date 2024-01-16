@@ -1,4 +1,10 @@
 @media screen and (max-width: 600px){
+  
+  /* Hamb Menu */
+  .hamburgerMenu{
+    display: none;
+  }
+
   /* Contact */
   .contactContainer{
     width: 90%;
