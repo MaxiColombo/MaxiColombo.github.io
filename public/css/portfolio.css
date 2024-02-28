@@ -344,6 +344,7 @@ section {
   overflow: hidden;
   position: relative;
   transition: all 0.8s ease; /* Añadida transición para todas las propiedades */
+  max-height: 300px;
 }
 @keyframes changeBorderColorr {
   0%, 50%, 100% {
