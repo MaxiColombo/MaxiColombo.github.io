@@ -151,6 +151,11 @@ section {
   box-sizing: border-box;
   min-height: fit-content;
 }
+@media screen and (max-height: 760px) {
+  section {
+      height: 100%;
+  }
+}
 
 .sectionContainer {
   display: flex;

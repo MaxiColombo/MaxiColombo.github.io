@@ -1,8 +1,4 @@
-@media screen and (max-height: 760px) {
-  section {
-      height: 100%;
-  }
-}
+
 @media screen and (max-width: 600px){
   
   /* Hamb Menu */
