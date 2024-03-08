@@ -1,4 +1,12 @@
-
+@media screen and (max-height: 760px) {
+  section {
+      height: 100%;
+      padding-bottom: 5rem;
+  }
+  .arrow,.arrowUp{
+    display: none;
+  }
+}
 @media screen and (max-width: 600px){
   
   /* Hamb Menu */
